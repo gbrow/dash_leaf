@@ -1,0 +1,10 @@
+dash==3.12
+pandas
+plotly
+dash_leaflet
+dash_leaflet.express
+dash
+dash_extensions.javascript
+plotly.express
+unidecode
+gunicorn
