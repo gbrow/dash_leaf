@@ -1,6 +1,5 @@
 import dash_leaflet as dl
-import dash_leaflet.express as dlx
-from dash import Dash, html, dash_table, dcc, callback, Output, Input
+from dash import Dash, html, dcc, callback, Output, Input
 from dash_extensions.javascript import arrow_function, assign
 import plotly.express as px
 import pandas as pd
