@@ -3,7 +3,6 @@ pandas
 plotly
 dash_leaflet
 dash
-dash_extensions.javascript
-plotly.express
+dash_extensions
 unidecode
 gunicorn
