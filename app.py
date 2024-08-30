@@ -56,7 +56,7 @@ geojson = dl.GeoJSON(url="/assets/geodados/municipios/municipio_"+unidecode(n_mu
                      id="geojson", filter=geojson_filter2)
 
 # Create the Dash app
-app = Dash(__name__)
+app = Dash()
 server = app.server
 df = pd.read_csv('pr_af_area.csv', engine='python', sep=';')
 #image_overlay = dl.ImageOverlay(opacity=0.8, url="assets/render/png/"+n_mun+".png", bounds=image_bounds, id="imgoverlay")
