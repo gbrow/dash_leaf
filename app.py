@@ -18,7 +18,7 @@ bbox = pd.read_csv('mun_bbox.csv', engine='python', sep=',')
 app = Dash()
 server = app.server
 df = pd.read_csv('pr_af_area.csv', engine='python', sep=';')
-app.layout = [html.Pre(df.unique(), id='click-data', style=styles['pre'])]
+app.layout = [html.Pre(bbox.N_MUN.unique(), id='click-data', style=styles['pre'])]
 
 if __name__ == '__main__':
     app.run_server()
