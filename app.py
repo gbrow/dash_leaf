@@ -56,7 +56,9 @@ geojson = dl.GeoJSON(url="/assets/geodados/municipios/municipio_"+unidecode(n_mu
                      hideout=dict(iniTest=iniTest, colorscale=colorscale, classes=classes_txt[:-1], style=style, colorProp="num_area"),
                      id="geojson", filter=geojson_filter2)
 
-app = Dash()
+# Create the Dash app
+app = dash.Dash(__name__)
+server = app.server
 df = pd.read_csv('pr_af_area.csv', engine='python', sep=';')
 #image_overlay = dl.ImageOverlay(opacity=0.8, url="assets/render/png/"+n_mun+".png", bounds=image_bounds, id="imgoverlay")
 app.layout = [dcc.Dropdown(bbox.NM_MUN.unique(), 'Escolha um município', id='dropdown-selection'), 
